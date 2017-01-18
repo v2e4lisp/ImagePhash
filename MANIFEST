@@ -3,6 +3,8 @@ ImagePhash.xs
 Makefile.PL
 MANIFEST
 ppport.h
-README
+README.pod
 t/ImagePhash.t
 lib/ImagePhash.pm
+deps/include/CImg.h
+deps/pHash-0.9.6.tar.gz

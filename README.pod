@@ -13,18 +13,7 @@ ImagePhash - Perl binding for pHash (http://phash.org)
 
 =head1 DESCRIPTION
 
-=over 4
-
-=item *
-For linux, libjpeg-dev and libpng-dev are requried.
-
-=item *
-For Mac, ImageMagic and libjpeg are required.
-
-=item *
-Windows is not supported.
-
-=back
+Measure similarity between images.
 
 =head2 EXPORT
 
@@ -39,6 +28,26 @@ which itself represents a 64bit unsinged integer.
 
 Calculate the hamming distance between the two image hashes and returns a positive integer less than 64.
 Small value means that the two images looks similar to each other.
+
+=head1 INSTALL
+
+=over 4
+
+=item *
+For linux, libjpeg-dev and libpng-dev are requried.
+
+=item *
+For Mac, ImageMagic and libjpeg are required.
+
+=item *
+Windows is not supported.
+
+=back
+
+  perl Makefile.PL
+  make
+  make test
+  make install
 
 =head1 SEE ALSO
 

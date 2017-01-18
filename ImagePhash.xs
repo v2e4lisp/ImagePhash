@@ -9,8 +9,6 @@
 
 #include <stdlib.h>
 
-#define COUNT_HEXDIGIT(s) strspn(s, "0123456789abcdefABCDEF")
-
 int valid_hex(char *s) {
         char c;
         for (; *s; s++) {
