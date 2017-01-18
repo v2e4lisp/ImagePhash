@@ -13,29 +13,50 @@ ImagePhash - Perl binding for pHash (http://phash.org)
 
 =head1 DESCRIPTION
 
+=over 4
+
+=item *
 For linux, libjpeg-dev and libpng-dev are requried.
+
+=item *
 For Mac, ImageMagic and libjpeg are required.
+
+=item *
 Windows is not supported.
+
+=back
 
 =head2 EXPORT
 
 None by default.
 
-phash($img)
+  phash($img)
 
-Calculate perceptual hash for an image;
-Returns a 16-byte long lowercase hex string which itself represents a 64bit unsinged integer.
+Calculate a perceptual hash for an image and returns a 16-byte long lowercase hex string
+which itself represents a 64bit unsinged integer.
 
-pdiff($hash1, $hash2)
+  pdiff($hash1, $hash2)
 
-Calculate the hamming distance between two image hashes. 
-Returns a positive integer less than 64.
+Calculate the hamming distance between the two image hashes and returns a positive integer less than 64.
 Small value means that the two images looks similar to each other.
 
 =head1 SEE ALSO
 
-* http://phash.org
-* A blog post by cloudinary: how to automatically identify similar images using phash ( http://cloudinary.com/blog/how_to_automatically_identify_similar_images_using_phash )
+=over 4
+
+=item *
+
+http://phash.org
+
+=item *
+
+phash bindings for other languages https://github.com/clearscene/pHash/tree/master/bindings
+
+=item *
+
+How to automatically identify similar images using phash http://cloudinary.com/blog/how_to_automatically_identify_similar_images_using_phash
+
+=back
 
 =head1 AUTHOR
 
