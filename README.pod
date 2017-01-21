@@ -69,7 +69,7 @@ How to automatically identify similar images using phash http://cloudinary.com/b
 
 =head1 AUTHOR
 
-Wenjun Yan, E<lt>wenjunyan.dev@gmail.comE<gt>
+Wenjun Yan, E<lt>wenjun.yan.dev@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
