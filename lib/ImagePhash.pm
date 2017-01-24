@@ -51,33 +51,63 @@ ImagePhash - Perl binding for pHash (http://phash.org)
 
 =head1 DESCRIPTION
 
-For linux, libjpeg-dev and libpng-dev are requried.
-For Mac, ImageMagic and libjpeg are required.
-Windows is not supported.
+Measure similarity between images.
 
 =head2 EXPORT
 
 None by default.
 
-phash($img)
+  phash($img)
 
-Calculate perceptual hash for an image;
-Returns a 16-byte long lowercase hex string which itself represents a 64bit unsinged integer.
+Calculate a perceptual hash for an image and returns a 16-byte long lowercase hex string
+which itself represents a 64bit unsinged integer.
 
-pdiff($hash1, $hash2)
+  pdiff($hash1, $hash2)
 
-Calculate the hamming distance between two image hashes. 
-Returns a positive integer less than 64.
-Small value means that the two images looks similar to each other.
+Calculate the hamming distance between the two image hashes and returns a positive integer less than 64.
+A small value means that the two images look similar to each other.
+
+=head1 INSTALL
+
+=over 4
+
+=item *
+For linux, libjpeg-dev and libpng-dev are requried.
+
+=item *
+For Mac, ImageMagic and libjpeg are required.
+
+=item *
+Windows is not supported.
+
+=back
+
+  perl Makefile.PL
+  make
+  make test
+  make install
 
 =head1 SEE ALSO
 
-* http://phash.org
-* A blog post by cloudinary: how to automatically identify similar images using phash ( http://cloudinary.com/blog/how_to_automatically_identify_similar_images_using_phash )
+=over 4
+
+=item *
+
+http://phash.org
+
+=item *
+
+phash bindings for other languages https://github.com/clearscene/pHash/tree/master/bindings
+
+=item *
+
+How to automatically identify similar images using phash http://cloudinary.com/blog/how_to_automatically_identify_similar_images_using_phash
+
+=back
 
 =head1 AUTHOR
 
-Wenjun Yan, E<lt>wenjunyan.dev@gmail.comE<gt>
+Wenjun Yan, E<lt>wenjun.yan.dev@gmail.comE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
@@ -87,5 +117,3 @@ This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.18.2 or,
 at your option, any later version of Perl 5 you may have available.
 
-
-=cut

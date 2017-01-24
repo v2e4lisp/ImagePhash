@@ -27,7 +27,7 @@ which itself represents a 64bit unsinged integer.
   pdiff($hash1, $hash2)
 
 Calculate the hamming distance between the two image hashes and returns a positive integer less than 64.
-Small value means that the two images looks similar to each other.
+A small value means that the two images look similar to each other.
 
 =head1 INSTALL
 
@@ -78,5 +78,4 @@ Copyright (C) 2017 by Wenjun Yan
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself, either Perl version 5.18.2 or,
 at your option, any later version of Perl 5 you may have available.
-
 
