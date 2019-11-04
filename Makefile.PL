@@ -18,7 +18,7 @@ WriteMakefile(
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/ImagePhash.pm', # retrieve abstract from module
        AUTHOR         => 'Wenjun Yan <wenjunyan.dev@google.com>') : ()),
-    LIBS              => ["-lstdc++ -ljpeg -lpng"], # e.g., '-lm'
+    LIBS              => ["-lstdc++ -ljpeg -lpng -lmvec -lm"], # e.g., '-lm'
     DEFINE            => '', # e.g., '-DHAVE_SOMETHING'
     INC               => "-I. -I$include_dir", # e.g., '-I. -I/usr/include/other'
     MYEXTLIB          => "$deps_dir/lib/libpHash.a",
